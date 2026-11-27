@@ -1,4 +1,4 @@
-# digicert-scan-template-version: 1
+# digicert-scan-template-version: 2
 name: DigiCert Code Scan dev
 
 on:
@@ -38,7 +38,7 @@ jobs:
       security-events: read
     steps:
       - if: inputs['registration-only'] != 'true'
-        uses: digicert/digicert-code-monitoring-action@v2-dev
+        uses: digicert/digicert-code-monitoring-action@master
         with:
           host: "https://exorcist-manicotti-moonscape.ngrok-free.dev"
           api-key: ${{ secrets.DIGICERT_BACKEND_API_KEY }}
