@@ -1,4 +1,4 @@
-# digicert-scan-template-version: 1
+# digicert-scan-template-version: 2
 name: DigiCert Code Scan dev
 
 on:
